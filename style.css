@@ -653,7 +653,7 @@ body {
 .qna-card.active .qna-content {display: block;}
 
 /*-----------------------------------*\
-  #SORU VE CEVAPLAR
+  #İLETİŞİM
 \*----------------------------------*/
 
 .contact .section-title {margin-block-end: 16px;}
@@ -661,4 +661,118 @@ body {
 .contact .btn {
     margin-inline: auto;
     margin-block-start: 24px;
+}
+
+/*-----------------------------------*\
+  #HABERCİ
+\*----------------------------------*/
+
+.newsteller {
+    position: relative;
+    margin-block-end: -200px;
+}
+
+.newsteller-card {
+    position: relative;
+    background-color: var(--oxford-blue-2);
+    padding: 48px 24px;
+    border-radius: var(--radius-12);
+    box-shadow: var(--shadow-1);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.newsteller-card .card-text {margin-block: 8px 32px;}
+
+.newsteller .input-field {
+    background-color: var(--oxford-blue-2);
+    font-size: var(--body-md);
+    color: var(--white);
+    padding: 12px 24px;
+    box-shadow: var(--shadow-1);
+    border-radius: var(--radius-pill);
+    outline: none;
+    margin-block-end: 16px;
+}
+
+.newsteller .input-field::placeholder{color:var(--manatee)}
+
+.newsteller .input-field:focus {box-shadow: var(--shadow-4);}
+
+.newsteller .btn {margin-inline: auto;}
+
+.newsteller .bg-icon {
+    position: absolute;
+    font-size: 7.2rem;
+    opacity: .05;
+    z-index: -1;
+}
+
+.newsteller .bg-icon-1 {
+    top: -24px;
+    left: -24px;
+    transform: rotate(-45deg);
+}
+
+.newsteller .bg-icon-2 {
+    bottom: -16px;
+    right: -16px;
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*----------------------------------*/
+
+.footer {background-color: var(--oxford-blue);}
+
+.footer-top {
+    padding-block-start: calc(var(--section-padding) + 200px);
+    border-block-end: 1px solid var(--white_a10);
+}
+
+.footer-top .container {
+    display: grid;
+    gap: 32px;
+}
+
+.footer-brand .footer-text {
+    color: var(--light-gray);
+    margin-block-start: 24px;
+}
+
+.footer-list-title {margin-block-end: 24px;}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding-block: 5px;
+    color: var(--light-gray);
+}
+
+.footer-link ion-icon {color: inherit;}
+
+.footer-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-list ul:first-child { margin-block-end: 24px;}
+
+.footer-list-item ion-icon {
+    color: var(--blue-violet);
+    font-size: 2rem;
+    --ionicon-stroke-width: 40px;
+}
+
+.footer-bottom {
+    padding-block: 30px;
+    color: var(--light-gray);
+}
+
+.copyright .span {
+    display: inline;
+    color: var(--maximum-red);
 }
