@@ -9,17 +9,21 @@ navToggler.addEventListener('click', () => {
     this.classList.toggle('active');
 });
 
-// ekran 200px aşağı kaydırılınca header görünür olması için aşağıdaki kodları yazıyoruz.
+// HEADER ve BAŞA DÖN butonu
+// ekran 200px aşağı kaydırılınca header ve başa dön butonu görünür olması için aşağıdaki kodları yazıyoruz.
 
 const header = document.querySelector('[data-header]');
+const backToTop = document.querySelector('[data-back-to-top-btn]');
 
 const activeElementOnScroll = () => {
     if (window.scrollY >= 200){
         header.classList.add('active');
+        backToTop.classList.add('active');
     }
     else
     {
         header.classList.remove('active');
+        backToTop.classList.remove('active');
     }
 }
 

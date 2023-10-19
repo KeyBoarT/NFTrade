@@ -776,3 +776,301 @@ body {
     display: inline;
     color: var(--maximum-red);
 }
+
+/*-----------------------------------*\
+  #BAŞA DÖN
+\*----------------------------------*/
+
+.back-to-top {
+    background-color: var(--blue-violet);
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 4;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+/*-----------------------------------*\
+  #MEDYA AYARLARI
+\*----------------------------------*/
+
+/* 
+    sitemizin responsive olması için ayarlamalar (575px ve fazlası için)
+*/
+
+@media (min-width: 575px) {
+    /* 
+        ÖNAYARLAR
+    */
+
+    .container {
+        max-width: 480px;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    /* 
+        HEADER
+    */
+
+    .header .container {max-width: unset;}
+
+    /* 
+        HABERCİ
+    */
+
+    .newsteller .input-wrapper {position: relative;}
+
+    .newsteller .input-field {
+        margin-block-end: 0;
+        padding-inline-end: 140px;
+    }
+
+    .newsteller .btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+    }
+}
+
+/* 
+    (768px ve fazlası için)
+*/
+@media (min-width: 768px) {
+
+    /*-----------------------------------*\
+      #KULLANILACAK ÖZELLİKLER
+    \*-----------------------------------*/
+
+    :root {
+        /* font ayarları */
+
+        --headline-md: 3rem;
+
+        /* Girintileme */
+
+        --section-padding: 48px;
+    }
+
+    /*-----------------------------------*\
+      #ÖNAYARLAR
+    \*-----------------------------------*/
+
+    .container,
+    .header .container {max-width: 768px;}
+
+    .grid-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    .section-text {
+        max-width: 575px;
+        margin-inline: auto;
+    }
+
+    /*-----------------------------------*\
+      #HEADER
+    \*-----------------------------------*/
+
+    .logo-small {display: none;}
+
+    .header .logo {display: block;}
+
+    /*-----------------------------------*\
+      #HERO
+    \*-----------------------------------*/
+
+    .hero {--section-padding: 240px 80px;}
+
+    
+    /*-----------------------------------*\
+      #POPÜLER KOLEKSİYONLAR
+    \*-----------------------------------*/
+
+    .top-collection .title-wrapper .btn-link {
+        display: flex;
+        margin: 0;
+    }
+
+    .top-collection .title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .top-collection .slider {
+        --slider-item: 2;
+        margin-inline: -16px;
+        padding-inline: 8px;
+    }
+
+    .top-collection .slider-item {padding-inline: 12px;}
+
+    .top-collection .container > .btn-link {
+        display: none;
+    }
+
+
+    /*-----------------------------------*\
+    #KEŞFET
+    \*-----------------------------------*/
+
+    .discover .btn-link {margin-block-start: 60px;}
+
+    /*-----------------------------------*\
+    #HABERCİ
+    \*-----------------------------------*/
+
+    .newsteller {margin-block-end: -130px;}
+
+    .newsteller-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .newsteller .text-center {text-align: left;}
+
+    .newsteller .headline-md {--headline-md: 2.6rem;}
+
+    .newsteller-card .card-text {margin-block-end: 0;}
+
+    /*-----------------------------------*\
+    #FOOTER
+    \*-----------------------------------*/
+
+    .footer-top {padding-block-start: calc(var(--section-padding) + 80px);}
+
+    .footer-top .container {grid-template-columns: 1fr;}
+
+    .footer-brand {padding-inline-end: 40px;}
+}
+
+/* 
+    (992px ve fazlası için)
+*/
+@media (min-width: 992px) {
+    /*-----------------------------------*\
+    #GENEL ELEMENTLER
+    \*-----------------------------------*/
+
+    :root {
+        /* font ayarları */
+        --headline-lg: 6rem;
+    }
+
+    /*-----------------------------------*\
+    #ÖNAYARLAR
+    \*-----------------------------------*/
+
+    .container,
+    .header .container {max-width: 950px;}
+
+    .grid-list {grid-template-columns: repeat(3, 1fr);}
+
+    /*-----------------------------------*\
+    #HEADER
+    \*-----------------------------------*/
+
+    .header {
+        background: none;
+        box-shadow: none;
+    }
+
+    .header.active {
+        background: var(--oxford-blue-2);
+        box-shadow: var(--shadow-1);
+    }
+
+    .nav-toggle-btn {display: none;}
+
+    .header-action {gap: 12px;}
+
+    .navbar,
+    navbar.active {
+        all: unset;
+        display: block;
+        margin-inline: auto 24px;
+    }
+
+    .navbar-list {
+        display: flex;
+        gap: 12px;
+    }
+    
+    /*-----------------------------------*\
+    #POPÜLER KOLEKSİYONLAR
+    \*-----------------------------------*/
+    .top-collection .slider {---slider-item: 3;}
+
+    /*-----------------------------------*\
+    #SORU VE CEVAPLAR
+    \*-----------------------------------*/
+    
+    .qna .container {max-width:55%;}
+
+    
+    /*-----------------------------------*\
+    #HABERCİ
+    \*-----------------------------------*/
+
+    .newsteller-card {padding-inline: 32px;}
+
+    .newsteller .bg-icon {font-size: 15rem;}
+
+    .newsteller .bg-icon-1 {
+        top: -36px;
+        left: -36px;
+    }
+
+    .newsteller .bg-icon-2 {
+        bottom: -30px;
+        right: -30px;
+    }
+
+    /*-----------------------------------*\
+    #FOOTER
+    \*-----------------------------------*/
+
+    .footer-top .container {grid-template-columns: 1fr .5fr .5fr .8fr;}
+}
+
+/* 
+    (1200px ve fazlası için)
+*/
+@media (min-width: 1200px) {
+    /*-----------------------------------*\
+    #GENEL ELEMENTLER
+    \*-----------------------------------*/
+
+    :root {
+        /* Girintileme */
+        --section-padding: 56px;
+    }
+
+    .container,
+    .header .container {max-width: 1120px;}
+
+    /*-----------------------------------*\
+    #POPÜLER KOLEKYİYONLAR
+    \*-----------------------------------*/
+    .top-collection .slider {--slider-item: 4;}
+
+    /*-----------------------------------*\
+    #KEŞFET
+    \*-----------------------------------*/
+
+    .discover .grid-list {grid-template-columns: repeat(4, 1fr);}
+    
+}
