@@ -651,3 +651,14 @@ body {
 .qna-content {display: none;}
 
 .qna-card.active .qna-content {display: block;}
+
+/*-----------------------------------*\
+  #SORU VE CEVAPLAR
+\*----------------------------------*/
+
+.contact .section-title {margin-block-end: 16px;}
+
+.contact .btn {
+    margin-inline: auto;
+    margin-block-start: 24px;
+}
