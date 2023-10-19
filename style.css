@@ -562,3 +562,92 @@ body {
     margin-inline: auto;
     margin-block-start: 32px;
 }
+
+/*-----------------------------------*\
+  #SATICILAR
+\*-----------------------------------*/
+
+.seller-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+}
+
+.seller-card .card-banner {
+    position: relative;
+    background-color: var(--oxford-blue);
+}
+
+.seller-card .card-banner img {border-radius: inherit;}
+
+.seller-card .card-banner ion-icon {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    font-size: 2rem;
+    color: var(--green-cyan);
+}
+
+.seller-card .user-name {margin-block-start: 2px;}
+
+.seller-card .btn-icon {
+    flex-shrink: 0;
+    margin-inline-start: auto;
+    border: 1px solid var(--blue-violet_a10);
+    background-color: var(--bg, var(--blue-violet_a5));
+    color: var(--color, var(--blue-violet));
+    transition: var(--transition-1);
+}
+
+.seller-card .btn-icon ion-icon {
+    color: var(--color);
+    --ionicon-stroke-width: 55px;
+}
+
+.seller-card .btn-icon:is(:hover, :focus-visible) {
+    --bg: var(--blue-violet);
+    --color: var(--white);  
+}
+
+/*-----------------------------------*\
+  #SORU VE CEVAPLAR
+\*----------------------------------*/
+
+.qna .section-title {margin-block-end: 16px;}
+
+.qna-list {
+    margin-block-start: 60px;
+    display: grid;
+    gap: 16px;
+}
+
+.qna-card {
+    box-shadow: var(--shadow-1);
+    border-radius: var(--radius-6);
+    overflow: hidden;
+}
+
+.qna-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    padding: 20px;
+}
+
+.qna-btn ion-icon {flex-shrink: 0;}
+
+.qna-card.active .qna-btn {background-color: var(--gunmetal);}
+
+.qna-card.active .qna-btn > * {color: var(--blue-violet);}
+
+.qna-card.active .qna-btn ion-icon {transform: rotate(.5turn);}
+
+.qna-content .body-md {padding: 20px;}
+
+.qna-content {display: none;}
+
+.qna-card.active .qna-content {display: block;}

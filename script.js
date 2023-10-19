@@ -80,6 +80,8 @@ const sliderInit = (currentSlider) => {
 
     // OTO KAYDIRMA
 
+    let autoSlideInterval;
+
     // Bu kısımda javascript'e otomatik olarak tanımlanmış olan ve asenkron fonksiyonlamaya yarayan setInterval fonksiyonunu kullanacağız.
     const startAutoSlide = () => autoSlideInterval = setInterval(slideNext, 3000);
     startAutoSlide();
@@ -98,3 +100,26 @@ const sliderInit = (currentSlider) => {
 for(let i = 0, len = sliders.length; i < len; i++) {
     sliderInit(sliders[i]);
 }
+
+// SORU CEVAP
+
+const accordions = document.querySelectorAll('[data-accordion]');
+
+let lastActiveAccordion;
+
+const accordionInit = (currentAccordion) => {
+    const accordionBtn = currentAccordion.querySelector('[data-accordion-btn');
+    accordionBtn.addEventListener('click', () => {
+        if(currentAccordion.classList.contains('active')) {
+            currentAccordion.classList.toggle('active');
+        }
+        else {
+            if (lastActiveAccordion) lastActiveAccordion.classList.remove('active');
+            currentAccordion.classList.add('active');
+        }
+
+        lastActiveAccordion = currentAccordion;
+    });
+}
+
+for(let i = 0, len = accordions.length; i < len; i++) { accordionInit(accordions[i]); }
