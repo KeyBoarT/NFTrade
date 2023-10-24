@@ -286,6 +286,32 @@ body {
     gap: 32px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--gunmetal);
+    min-width: 160px;
+    box-shadow: var(--shadow-2);
+    padding: 5px 10px;
+    z-index: 1;
+    border-radius: var(--radius-6);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.drop-link {
+    font-family: 1.5rem;
+    font-weight: var(--fw-500);
+    margin: 4px 6px;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -1072,5 +1098,4 @@ body {
     \*-----------------------------------*/
 
     .discover .grid-list {grid-template-columns: repeat(4, 1fr);}
-    
 }
