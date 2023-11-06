@@ -107,10 +107,12 @@ for(let i = 0, len = sliders.length; i < len; i++) {
 
 // SORU CEVAP
 
+// soru cevap elementlerini buluyoruz.
 const accordions = document.querySelectorAll('[data-accordion]');
 
 let lastActiveAccordion;
 
+// tüm soru-cevap elementlerine göster - kapat fonksiyonu ekliyoruz
 const accordionInit = (currentAccordion) => {
     const accordionBtn = currentAccordion.querySelector('[data-accordion-btn');
     accordionBtn.addEventListener('click', () => {
@@ -127,3 +129,84 @@ const accordionInit = (currentAccordion) => {
 }
 
 for(let i = 0, len = accordions.length; i < len; i++) { accordionInit(accordions[i]); }
+
+
+// DUYURU 
+
+// duyuru elementlerini buluyoruz
+const annoModel = document.querySelector('[anno-model]');
+const closeBtn = document.querySelector('[anno-close]');
+
+// duyuru gösterme fonksiyonu
+function showDialog(dialog) {
+    dialog.show();
+}
+
+// duyuru kapatma fonksiyonu
+function closeDialog(dialog) {
+    dialog.close();
+}
+
+// duyuru kapatma fonksiyonu
+window.addEventListener('load', () => {
+    showDialog();
+});
+
+annoModel.show();
+
+closeBtn.addEventListener('click', () => {
+    closeDialog(annoModel);
+});
+
+
+// ÇEREZLER
+
+const btnCookies = document.querySelector('[data-cookies-accept]');
+const sectionCookies = document.querySelector('[data-cookies]');
+
+function setCookies (cName, cValue, expdays){
+    let date = new Date();
+    date.setTime(date.getTime() + (expdays * 24 * 60 * 60 * 1000));
+    const expires = `expires=${date.toUTCString()}`;
+    document.cookie = `${cName}=${cValue}; ${expires}; path=/`;
+}
+
+function getCookie (cName) {
+    const name = cName + '=';
+    const cDecoded = decodeURIComponent(document.cookie);
+    const cArr = cDecoded.split(';');
+    let value;
+    cArr.forEach(val => {
+        if (val.indexOf(name) === 0) value = val.substring(name.length);
+    });
+
+    return value;
+}
+
+function cookieMessage() {
+    if(!getCookie('cookie')){
+        sectionCookies.style.display = 'block';
+    }
+}
+
+window.addEventListener('load', cookieMessage);
+
+btnCookies.addEventListener('click', () => {
+    sectionCookies.style.display = 'none';
+    setCookies('cookie', true, 30);
+});
+
+// GİZLİLİK POLİTİKASI
+const btnPrivacyOpen = document.querySelector('[data-privacy-open]');
+const btnPrivacyClose = document.querySelector('[data-privacy-close]');
+const sectionPrivacy = document.querySelector('[data-privacy]');
+
+function privacyOpen() {
+    sectionPrivacy.style.display = 'block';
+}
+
+function privacyClose() {
+    sectionPrivacy.style.display = 'none';
+}
+btnPrivacyOpen.addEventListener('click', privacyOpen);
+btnPrivacyClose.addEventListener('click', privacyClose);
