@@ -38,7 +38,7 @@ NFTrade, günümüzde gelişen Sanat ve Teknoloji sayesinde ortaya çıkan NFT'l
 | Beyaz | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) 	#ffffff | 
 | Manati | ![#9ca3b0](https://via.placeholder.com/10/9ca3b0?text=+) #9ca3b0 | 
 | Yeşil Camgöbeği | ![#059467](https://via.placeholder.com/10/059467?text=+) #059467 | 
-| Öğrenci Grisi | ![#94a3b8](https://via.placeholder.com/10/94a3b8?text=+) #94a3b8 | 
+| Cadet Grisi | ![#94a3b8](https://via.placeholder.com/10/94a3b8?text=+) #94a3b8 | 
 | Elektrik İndigo | ![#6b26d9](https://via.placeholder.com/10/6b26d9?text=+) #6b26d9 | 
 | Maksimum Kırmızı | ![#dc2828](https://via.placeholder.com/10/dc2828?text=+) #dc2828 | 
 | Siyah | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000| 
@@ -90,7 +90,7 @@ Projeyi inşa ederken html css ve native javascriptte oldukça geliştim, öte y
   
 ## Yazarlar ve Teşekkür
 
-- [@codewithsadee](https://github.com/codewithsadee) Temek şablon ve tasarım için.
+- [@codewithsadee](https://github.com/codewithsadee) Temel şablon ve tasarım için.
 
 - [@animation-coding](https://github.com/animation-coding) Admin sayfası şablonu için.
 
