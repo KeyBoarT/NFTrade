@@ -3,7 +3,7 @@
 
     
 # NFTrade
-
+https://nftradee.netlify.app/
 NFTrade, günümüzde gelişen Sanat ve Teknoloji sayesinde ortaya çıkan NFT'lerin alımını ve satımını kolaylaştırmak, alıcı ve satıcı arasında güvenli bir köprü kurmak niyetiyle ortaya çıkmış bir web sitedir.
 
 ## Özellikler
