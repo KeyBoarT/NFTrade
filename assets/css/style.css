@@ -1290,36 +1290,6 @@ body {
 }
 
 /*-----------------------------------*\
-# COOKIES
-\*-----------------------------------*/
-
-.cookies {
-    position: fixed;
-    display: none;
-    z-index: 3;
-    width: 100%;
-    height: fit-content;
-    left: 0;
-    bottom: 0;
-}
-
-.cookies .container {
-    background-color: var(--oxford-blue-2);
-    border-radius: var(--radius-6);
-    border: 1px solid var(--oxford-blue);
-    box-shadow: var(--shadow-5);
-    color: white;
-}
-
-.cookies .container button {
-    margin: 10px auto;
-}
-
-.cookies .container img {
-    margin: auto;
-}
-
-/*-----------------------------------*\
 # PRIVACY POLICY
 \*-----------------------------------*/
 
@@ -1359,6 +1329,37 @@ body {
     background-color: var(--green-cyan);
     transform: translate(-25%, 25%) rotate(180deg);
 }
+
+/*-----------------------------------*\
+# COOKIES
+\*-----------------------------------*/
+
+.cookies {
+    position: fixed;
+    display: none;
+    z-index: 3;
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    bottom: 0;
+}
+
+.cookies .container {
+    background-color: var(--oxford-blue-2);
+    border-radius: var(--radius-6);
+    border: 1px solid var(--oxford-blue);
+    box-shadow: var(--shadow-5);
+    color: white;
+}
+
+.cookies .container button {
+    margin: 10px auto;
+}
+
+.cookies .container img {
+    margin: auto;
+}
+
 
 /*-----------------------------------*\
 # DETAILS DIALOG

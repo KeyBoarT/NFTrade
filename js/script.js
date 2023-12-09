@@ -130,33 +130,21 @@ const accordionInit = (currentAccordion) => {
 
 for(let i = 0, len = accordions.length; i < len; i++) { accordionInit(accordions[i]); }
 
+// GİZLİLİK POLİTİKASI
+const btnPrivacyOpen = document.querySelector('[data-privacy-open]');
+const btnPrivacyClose = document.querySelector('[data-privacy-close]');
+const sectionPrivacy = document.querySelector('[data-privacy]');
 
-// DUYURU 
 
-// duyuru elementlerini buluyoruz
-const annoModel = document.querySelector('[anno-model]');
-const closeBtn = document.querySelector('[anno-close]');
-
-// duyuru gösterme fonksiyonu
-function showDialog(dialog) {
-    dialog.show();
+function privacyOpen() {
+    sectionPrivacy.style.display = 'block';
 }
 
-// duyuru kapatma fonksiyonu
-function closeDialog(dialog) {
-    dialog.close();
+function privacyClose() {
+    sectionPrivacy.style.display = 'none';
 }
-
-// duyuru kapatma fonksiyonu
-window.addEventListener('load', () => {
-    showDialog();
-});
-
-annoModel.show();
-
-closeBtn.addEventListener('click', () => {
-    closeDialog(annoModel);
-});
+btnPrivacyOpen.addEventListener('click', privacyOpen);
+btnPrivacyClose.addEventListener('click', privacyClose);
 
 
 // ÇEREZLER
@@ -195,18 +183,3 @@ btnCookies.addEventListener('click', () => {
     sectionCookies.style.display = 'none';
     setCookies('cookie', true, 30);
 });
-
-// GİZLİLİK POLİTİKASI
-const btnPrivacyOpen = document.querySelector('[data-privacy-open]');
-const btnPrivacyClose = document.querySelector('[data-privacy-close]');
-const sectionPrivacy = document.querySelector('[data-privacy]');
-
-function privacyOpen() {
-    sectionPrivacy.style.display = 'block';
-}
-
-function privacyClose() {
-    sectionPrivacy.style.display = 'none';
-}
-btnPrivacyOpen.addEventListener('click', privacyOpen);
-btnPrivacyClose.addEventListener('click', privacyClose);
