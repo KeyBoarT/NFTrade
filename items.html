@@ -70,7 +70,7 @@
 
             <div class="header-action">
                 <button class="btn-icon primary" aria-label="wallet">
-                    <ion-icon name="cart"></ion-icon>
+                    <a href="admin.html"><ion-icon name="pause"></ion-icon></a>
                 </button>
 
                 <button class="btn-icon profil-btn" aria-label="NFTrade Hesabı: Mehmet Sezer">
@@ -94,29 +94,27 @@
                 <div class="dropdown" data-accordion-btn>
                     <a class="navbar-link label-lg link:hover dropbtn">Sırala</a>
                     <div class="dropdown-content">
-                        <a class="link:hover drop-link">İsme göre sırala</a>
+                        <a class="link:hover drop-link" sort-by-name>İsme göre sırala</a>
                         <a class="link:hover drop-link ">Sahibine göre sırala</a>
                         <a class="link:hover drop-link">Fiyatına göre sırala</a>
                     </div>
                 </div>
 
                 <div class="input-wrapper">
-                    <input type="email" placeholder="Bir şeyler yazın" required id="" class="input-field">
-
-                    <button class="btn btn-primary">Ara</button>
+                    <input type="text" placeholder="Bir şeyler yazın" id="" class="input-field" item-search>
                 </div>
             </div>
 
             <ul class="grid-list">
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-8.gif" width="500"
                             height="500" alt="Geniune Undead #3902" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
                         </div>
 
@@ -154,21 +152,21 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-7.jpg" width="500"
                             height="500" alt="Windchime #768" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
 
                             <div class="countdown">
                                 <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                                <span class="span">5d 04h 18m 04s</span>
+                                <span class="span">5g 04s 18d 04s</span>
                             </div>
                         </div>
 
@@ -206,15 +204,15 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-6.gif" width="500"
                             height="500" alt="Probably A Label #3277" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
                         </div>
 
@@ -252,15 +250,15 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-5.jpg" width="500"
                             height="500" alt="Probably A Label #1711" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
                         </div>
 
@@ -298,15 +296,15 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-4.jpg" width="500"
                             height="500" alt="Shibuya Scramble Punks" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
                         </div>
 
@@ -344,15 +342,15 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-3.jpg" width="500"
                             height="500" alt="Probably A Label #650" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
                         </div>
 
@@ -390,21 +388,21 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-2.jpg" width="500"
                             height="500" alt="Looki #0147" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
 
                             <div class="countdown">
                                 <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                                <span class="span">10d 23h 24m 10s</span>
+                                <span class="span">10g 23s 24d 10s</span>
                             </div>
                         </div>
 
@@ -442,15 +440,15 @@
                     </div>
                 </li>
 
-                <li>
-                    <div class="discover-card card">
+                <li data-discover-card>
+                    <div class="discover-card card" >
                         <div class="card-banner img-holder" style="--width:500; --height: 500;">
                             <img src="assets/showcase-1.jpg" width="500"
                             height="500" alt="Poob #285" class="img-cover" loading="lazy">
 
                             <button class="btn btn-primary">
                                 <ion-icon name="flash" aria-hidden="true"></ion-icon>
-                                <span class="span">Place Bid</span>
+                                <span class="span">Teklif Ver</span>
                             </button>
                         </div>
 
@@ -557,7 +555,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">
+                        <a href="sellers.html" class="footer-link">
                             <ion-icon name="chevron-forward"></ion-icon>
 
                             <span class="span">Yaratıcılar</span>
@@ -596,10 +594,10 @@
 
                     
                     <li>
-                        <a href="#" class="footer-link">
+                        <a href="#" class="footer-link" data-privacy-open>
                             <ion-icon name="chevron-forward"></ion-icon>
 
-                            <span class="span">Gizlilk Politikası</span>
+                            <span class="span">Gizlilik Politikası</span>
                         </a>
                     </li>
 
@@ -612,7 +610,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">
+                        <a href="contact.html" class="footer-link">
                             <ion-icon name="chevron-forward"></ion-icon>
 
                             <span class="span">İletişim</span>
@@ -623,7 +621,7 @@
                 <div class="footer-list">
                     <ul>
                         <li>
-                            <p class="title-lg footer-list-title">NFTrade uygulamasını indirin!</p>
+                            <p class="title-lg footer-list-title">NFTrade uygulamasını indir!</p>
                         </li>
 
                         <li class="footer-list-item">
@@ -667,6 +665,18 @@
         </div>
       </footer>
 
+    <!-- 
+        PRIVACY POLİCY
+     -->
+    <div class="section privacy" aria-labelledby="privay policy" data-privacy>
+        <div class="container">
+            <button class="btn-icon" data-privacy-close>
+                <ion-icon name="close"></ion-icon>
+            </button>
+            <iframe src="https://s3.privyr.com/privacy/privacy-policy.html?d=eyJlbWFpbCI6Im1laG1ldHN6cjA1QGdtYWlsLmNvbSIsImNvbXBhbnkiOiJORlRyYWRlIiwiZ2VuX2F0IjoiMjAyMy0xMS0wNlQyMTozODoxMS4xNzFaIn0=" frameborder="0" width="100%" height="100%" style="border-radius: 6px;"></iframe>
+        </div>
+    </div>
+
       <!-- 
         BACK TO TOP
        -->
@@ -682,7 +692,7 @@
 </body>
     <!-- Kendi script dosyamız -->
     <script src="js/script.js"></script>
-
+    <script src="js/item-search.js"></script>
     <!-- sitemizde kullanacağımız ikonların linki -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
