@@ -88,7 +88,7 @@ Web Programlama dersinde proje yapmaya ihtiyaç duymam.
 
 ## Çıkarılan Dersler
 
-Projeyi inşa ederken html css ve native javascriptte oldukça geliştim, öte yandan responsive uygulama geliştirme konusunda epey yol kat ettiğimi düşünüyorum. Projede en zorlandığım kısım 'responsiveleştirme' yi saymazsak tasarım kısmı oldu. Hangi renkleri kullanmalıyım? Yazı fontu hangisi olmalı? Kenar yumuşatmaları ne kadar olmalı? gibi düzinelerce sorularla uğraştım. Öte yandan bunu aksine backend kısmında oldkuça kolay hareket ettim. Javascript ve Chartjs ile butonlara 'eventlistener' eklemek ya da html kısmında isim verdiğim elementleri js dosyasında bulmak oldukça keyif verdi. Tıpkı bir yapbozun parçalarını birleştiriyormuşum gibi hissettirdi. Her ne olursa olsun bu projeyi yapmak Full Stack Developer olma yolunda bana çok şey kattı.
+Projeyi inşa ederken html css ve native javascriptte oldukça geliştim, öte yandan responsive uygulama geliştirme konusunda epey yol kat ettiğimi düşünüyorum. Projede en zorlandığım kısım 'responsiveleştirme' yi saymazsak tasarım kısmı oldu. Hangi renkleri kullanmalıyım? Yazı fontu hangisi olmalı? Kenar yumuşatmaları ne kadar olmalı? gibi düzinelerce sorularla uğraştım. Öte yandan bunun aksine backend kısmında oldukça kolay hareket ettim. Javascript ve Chartjs ile butonlara 'eventlistener' eklemek ya da html kısmında isim verdiğim elementleri js dosyasında bulmak oldukça keyif verdi. Tıpkı bir yapbozun parçalarını birleştiriyormuşum gibi hissettirdi. Her ne olursa olsun bu projeyi yapmak Full Stack Developer olma yolunda bana çok şey kattı.
   
 ## Yazarlar ve Teşekkür
 
