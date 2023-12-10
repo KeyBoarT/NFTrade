@@ -84,6 +84,8 @@ Web Programlama dersinde proje yapmaya ihtiyaç duymam.
 
 [![Ionicon](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)]()
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26bd7052-9ce8-4bb8-b063-fb81811ce938/deploy-status)](https://app.netlify.com/sites/nftradee/deploys)
+
 ## Çıkarılan Dersler
 
 Projeyi inşa ederken html css ve native javascriptte oldukça geliştim, öte yandan responsive uygulama geliştirme konusunda epey yol kat ettiğimi düşünüyorum. Projede en zorlandığım kısım 'responsiveleştirme' yi saymazsak tasarım kısmı oldu. Hangi renkleri kullanmalıyım? Yazı fontu hangisi olmalı? Kenar yumuşatmaları ne kadar olmalı? gibi düzinelerce sorularla uğraştım. Öte yandan bunu aksine backend kısmında oldkuça kolay hareket ettim. Javascript ve Chartjs ile butonlara 'eventlistener' eklemek ya da html kısmında isim verdiğim elementleri js dosyasında bulmak oldukça keyif verdi. Tıpkı bir yapbozun parçalarını birleştiriyormuşum gibi hissettirdi. Her ne olursa olsun bu projeyi yapmak Full Stack Developer olma yolunda bana çok şey kattı.
